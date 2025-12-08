@@ -8,15 +8,20 @@ console.log('Pic 3:', pic3Overlay);
 
 window.setTimeout(() => {
     console.log('Fading out picture 1');
-    console.log(this.pic1Overlay);
-
-    pic1Overlay.style.opacity = 0;
+    console.log(pic1Overlay);
+    if (pic1Overlay) {
+        pic1Overlay.style.opacity = 0;
+    }
 }, 1000);
 
 window.setTimeout(() => {
-    pic2Overlay.style.opacity = 0;
+    if (pic2Overlay) {
+        pic2Overlay.style.opacity = 0;
+    }
 }, 3000);
 
 window.setTimeout(() => {
-    pic3Overlay.style.opacity = 0;
-}, 3000);
+    if (pic3Overlay) {
+        pic3Overlay.style.opacity = 0;
+    }
+}, 5000);

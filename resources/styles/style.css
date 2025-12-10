@@ -52,6 +52,13 @@ p {
   border-bottom: 75px solid white;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 .pic1 {
   top: 50px;
   left: 30px;
@@ -61,14 +68,17 @@ p {
 .pic2 {
   top: 300px;
   right: 30px;
+  transform: rotate(-7deg);
+}
+
+.pic3 {
+  top: 700px;
+  left: 30px;
   transform: rotate(-11deg);
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+.pic3 img {
+  object-fit: cover;
 }
 
 .overlay {
@@ -81,35 +91,4 @@ img {
   right: -1px;
   opacity: 0.9;
   transition: opacity 7s;
-}
-
-@media only screen and (max-width: 730px) {
-    :root {
-        --poloroid-width: 200px;
-        --poloroid-height: 250px;
-    }
-    
-    .message-container {
-        width: 60%;
-        padding: 40px 20px;
-        margin: 15px auto;
-    }
-    
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    p {
-        font-size: 1.4rem;
-    }
-    
-    .pic1 {
-        top: 30px;
-        left: 10px;
-    }
-    
-    .pic2 {
-        top: 200px;
-        right: 10px;
-    }
 }

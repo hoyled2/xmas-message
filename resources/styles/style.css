@@ -81,6 +81,34 @@ img {
   object-fit: cover;
 }
 
+.pic4 {
+  top: 900px;
+  right: 30px;
+  transform: rotate(-8deg);
+}
+
+.pic5 {
+  top: 1200px;
+  left: 30px;
+  transform: rotate(-4deg);
+}
+
+.pic6 {
+  top: 1500px;
+  right: 30px;
+  transform: rotate(5deg);
+}
+
+.pic6 img {
+  object-fit: cover;
+}
+
+.pic7 {
+  top: 1700px;
+  left: 45px;
+  transform: rotate(8deg);
+}
+
 .overlay {
   width: calc(var(--poloroid-width) - 27px);
   background-color: white;
